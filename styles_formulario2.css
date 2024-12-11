@@ -1,0 +1,156 @@
+/* From Uiverse.io by omriluz */ 
+.form-container {
+    width: 600px;
+    height: 500px;
+    background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -49%);
+    z-index: 1;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.form-container button:active {
+    scale: 0.95;
+}
+
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+}
+
+.form-container .form-group input {
+    width: 95%;
+    padding: 8px 8px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+    width: 95%;
+    padding: 8px 8px;
+    border-radius: 10px;
+    resize: none;
+    color: #fff;
+    height: 89px;
+    border:1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+    opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+    outline: none;
+    border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #1a1a1a;
+}
+
+#network-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.form-container .form-group a {
+    display: inline-flex; /* Cambiado a inline-flex para mantener la alineación inline si es necesario */
+    justify-content: center;
+    align-items: center; /* Centra el texto verticalmente */
+    font-family: inherit;
+    color: #fff; /* Cambiado a blanco para mejor contraste sobre fondo oscuro */
+    font-weight: 600;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    width: auto; /* Ajusta el ancho al contenido */
+    padding: 10px 20px; /* Espaciado uniforme alrededor del texto */
+    background-color: #313131; /* Color de fondo */
+    border: 1px solid #414141; /* Borde con color */
+    font-size: 16px; /* Tamaño de fuente ajustado */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efecto de transición al pasar el mouse */
+}
+    
+/* Estilo para hover */
+.form-container .form-group a:hover {
+    background-color: #414141; /* Fondo más claro en hover */
+    color: #d4d4d4; /* Color de texto más claro */
+    }
+
